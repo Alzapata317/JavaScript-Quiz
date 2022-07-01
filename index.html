@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <nav>
+            <h1 class="title">JavaScript Quiz</h1>
+            <p id="#1a">Timer</p>
+        </nav>
+        <main>
+            <container class="container">
+                <section id="start-menu">
+                    <h1 class="title">60 Second Quiz</h1>
+                    <button class="start" id="start-btn">Start</button>
+                </section>
+                <section class="hide" id="Q1">
+                    <h1 class="title">What element do you put your javascript link in?</h1>
+                    <button class="correct-btn">Script</button>
+                    <button class="wrong-btn">Link</button>
+                    <button class="wrong-btn">Span</button>
+                    <button class="wrong-btn">Href</button>
+                </section>
+                <section class="hide" id="Q2">
+                    <h1 class="title">Javascript is the ______?</h1>
+                    <button class="correct-btn">Behavior of the page</button>
+                    <button class="wrong-btn">The style of the page</button>
+                    <button class="wrong-btn">The structure of the page</button>
+                    <button class="wrong-btn">Local storage</button>
+                </section>
+                <section class="hide" id="Q3">
+                    <h1 class="title">When creating a javascript file the extension is</h1>
+                    <button class="correct-btn">.js</button>
+                    <button class="wrong-btn">.css</button>
+                    <button class="wrong-btn">.java</button>
+                    <button class="wrong-btn">.script</button>
+                </section><section class="hide" id="Q4">
+                    <h1 class="title">What can be stored in arrays</h1>
+                    <button class="correct-btn">All of the Above</button>
+                    <button class="wrong-btn">Strings</button>
+                    <button class="wrong-btn">Objects</button>
+                    <button class="wrong-btn">Variables</button>
+                </section><section class="hide" id="Q5">
+                    <h1 class="title">What are the primitive values of javascript</h1>
+                    <button class="correct-btn">All of the above</button>
+                    <button class="wrong-btn">Booleans</button>
+                    <button class="wrong-btn">Numbers</button>
+                    <button class="wrong-btn">Strings</button>
+                </section><section class="hide" id="Q6">
+                    <h1 class="title">Which method is used to make multi line comments in javascript</h1>
+                    <button class="correct-btn">/* */</button>
+                    <button class="wrong-btn">"!— —>"</button>
+                    <button class="wrong-btn">\\</button>
+                    <button class="wrong-btn">//</button>
+                </section>
+            </container>
+        </main>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script type="text/javascript" src="./assets/java/script.js"></script>
+    </body>
+
 </html>
+<!--- When I load the page I want to have a title to the quiz and a starting button
+    when I press the start button I want a timer to appear in the top right corner and the first question to pop up
+    each time I answer a question it will tell me correct or incorrect, a new question will appear
+    when all ten questions are finished 
+-->
